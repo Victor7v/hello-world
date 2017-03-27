@@ -4,7 +4,7 @@
 
 	<head>
 		<meta charset="utf-8">
-   	<title>The HTML5 Herald</title>
+   	<title>Primera Página</title>
   	 	<meta name="description" content="The HTML5 Herald">
   		<meta name="author" content="Víctor Reyes" >
   		
@@ -21,7 +21,7 @@
             	<div class="account-wall">
                	<img class="profile-img" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120"
                     alt="">
-               	<form class="form-signin">
+               	<form class="form-signin" action="../index.php/Bienvenida">
                		<input type="text" class="form-control" placeholder="Email" required autofocus>
                		<input type="password" class="form-control" placeholder="Password" required>
                 		<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>                    								
