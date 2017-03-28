@@ -26,7 +26,7 @@ class Holamundo extends CI_Controller {
 					$this->load->view('Holamundo',$data);
 				}
 			}
-		}
+		 }// comentario de prueba para git, borrar! 
 	}//index
 }
 
