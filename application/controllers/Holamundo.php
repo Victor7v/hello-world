@@ -27,6 +27,6 @@ class Holamundo extends CI_Controller {
 				}
 			}
 		}
-	}
+	}//index
 }
 
