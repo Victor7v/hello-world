@@ -26,24 +26,23 @@
             	<div class="account-wall">
                	<img class="profile-img" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120"
                     alt="">
-               	<form class="form-signin" action="<?= base_url().'index.php/Bienvenida' ?>">
-               		<input type="text" class="form-control" placeholder="Email" required autofocus>
-               		<input type="password" class="form-control" placeholder="Password" required>
-                		<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>                    								
-                		<label class="checkbox pull-left">
-                    		<input type="checkbox" value="remember-me">
+		<form class="form-signin" action="<?= base_url()?>" method="post">
+               		<input type="email" name="mailUs" class="form-control" placeholder="Email" required autofocus>
+               		<input type="password" name="paswd" class="form-control" placeholder="Password" required>
+                	<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                	<label class="checkbox pull-left">
+                  		<input type="checkbox" value="remember-me">
                    		Remember me
-                		</label>
-                		<a href="#" class="pull-right need-help">Need help? </a><span class="clearfix"></span>
-                	</form>
+                	</label>
+                	<a href="#" class="pull-right need-help">Need help? </a><span class="clearfix"></span>
+                </form>
             	</div>
             	<a href="#" class="text-center new-account">Create an account </a>
         		</div>
     		</div>
 		</div>
-		<button action="<?= base_url().'index.php/Bienvenida'; ?> ">Clickeame!</button>
+
 	</body>
 	
 	<script type="text/javascript" src="../../assets/js/jQuery-3.2.0.min.js"></script>
 	<script type="text/javascript" src="../../assets/js/bootstrap.js"></script>
-</html>
