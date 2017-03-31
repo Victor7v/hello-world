@@ -18,7 +18,8 @@ class Usuario extends CI_Model {
 	}
 
 	function inserta_usuario($datos = array()){
-		if(!$this->_required(array("emailUsuario","contrasenaUsuario"),$datos)){//
+		echo $datos['emailUsuario'];
+		if($datos['nombreUsuario']=='' || $datos['emailUsuario']=='' || $datos['cpmtrasemaUsuario'] == ''){
 			return FALSE; 
 		}
 		
