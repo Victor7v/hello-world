@@ -1,7 +1,7 @@
 <?php
 class Bienvenida extends CI_Controller
 {
-	function index()//comentario para git, borrar 
+	function index()
 	{
 		echo 'Hola amigo';
 	}
