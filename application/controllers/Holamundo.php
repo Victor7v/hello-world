@@ -23,7 +23,6 @@ class Holamundo extends CI_Controller {
 	public function insertar()
 	{	
 	$this->load->model('Usuario');
-		//cargamos el formulario	
 		//$this->load->helper('form');
 		//$this->load->View('insertar');
 

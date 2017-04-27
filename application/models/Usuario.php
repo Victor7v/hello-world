@@ -5,7 +5,7 @@ class Usuario extends CI_Model {
 	parent::__construct(); //CI_Model();
 	//parent::CI_Model();
 	}
-	//Comentario para git
+	
 	function existeEmail($mail){
 	 	
 		$this->db->where('emailUsuario',$mail);

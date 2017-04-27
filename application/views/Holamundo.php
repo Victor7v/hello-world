@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Hola, esto e un comentario para git, borrar. -->
+
 <html lang="ES">
 
 	<head>
