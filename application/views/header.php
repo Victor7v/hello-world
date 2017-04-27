@@ -1,6 +1,8 @@
 <html>
 <head>
-	<title>GitHub changes</title>
+
+	<title>Git</title>
+
 </head>
 <style>
  *{
