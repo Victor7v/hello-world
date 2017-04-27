@@ -5,16 +5,18 @@ class Usuario extends CI_Model {
 	parent::__construct(); //CI_Model();
 	//parent::CI_Model();
 	}
-
-	function existeEmail($mail){
+//algo que borrar para cuando eso.. 
+	function comprobarLogin($mail,$pass){
 	 	
-		$this->db->where('emailUsuario',$mail);
-		//$this->db->where('contrasenaUsuario',md5($clave);
-		$query = $this->db->get('usuario');
-		if($query->num_rows() > 0){
-		   return $query->row();
-		}
-		return 0;
+	   $this->db->where('emailUsuario',$mail);
+	   $query = $this->db->get('usuario');
+	   if($query->num_rows() > 0){
+	  	   $usuario =  $query->row();
+	           return $this->bcrypt->check_password($pass,$usuario['contrasenaUsuario']) ? $usuario : 0;
+//		   return $query->row();
+	   } else {
+	      return 0;
+	   }
 	}
 
 	function inserta_usuario($datos = array()){
@@ -30,4 +32,4 @@ class Usuario extends CI_Model {
 	}
 }
 
-
+//

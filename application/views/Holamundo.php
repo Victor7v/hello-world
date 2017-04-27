@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<!-- Hola mundo .. borrar cuando lo vea. -->
 <html lang="ES">
 
 	<head>
@@ -27,9 +27,9 @@
                	<img class="profile-img" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120"
                     alt="">
 		<form class="form-signin" action="<?= base_url()?>" method="post">
-               		<input type="email" name="mailUs" class="form-control" placeholder="Email" required autofocus>
-               		<input type="password" name="paswd" class="form-control" placeholder="Password" required>
-                	<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+               		<input id="email" type="email" name="mailUs" class="form-control" placeholder="Email" required autofocus>
+               		<input id="pass" type="password" name="paswd" class="form-control" placeholder="Password" required>
+                	<button id="submit_login" class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
                 	<label class="checkbox pull-left">
                   		<input type="checkbox" value="remember-me">
                    		Remember me
@@ -41,8 +41,9 @@
         		</div>
     		</div>
 		</div>
-
+		<div id="mensaje"></div>
 	</body>
 	
-	<script type="text/javascript" src="../../assets/js/jQuery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/jquery-3.2.0.min.js"></script>
 	<script type="text/javascript" src="../../assets/js/bootstrap.js"></script>
+	<script type="text/javascript" src="<?= base_url();?>js/main.js"></script>
