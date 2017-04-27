@@ -49,6 +49,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'holamundo';//welcome
+$route['default_controller'] = 'login';//welcome
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+//las siguientes rutas no vienen por defecto. 
+$route['hola/:any'] = 'bienvenida/algo';
+$route['validation'] = 'Formulario';
+//redireccion de cookies
+$route['cookie'] = 'Cookie_controller';
+$route['cookie/display'] = "Cookie_controller/display_cookie";
+$route['cookie/delete'] = "Cookie_controller/deletecookie";
