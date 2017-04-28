@@ -1,5 +1,5 @@
 <?php
-// hola mundkjdfkjhsdkjfhskdjhkjhsdfkjhso
+// hola mundo
 defined('BASEPATH') OR exit('no direct script access allowed');
 
 class Holamundo extends CI_Controller {
