@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('no direct script access allowed ');
 class Bienvenida extends CI_Controller
 {
-	function index()//comentario para git, borrar 
+	function index()
 	{
 		echo 'Hola amigo';
 	}

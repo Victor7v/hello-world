@@ -7,7 +7,7 @@
    	<title>Primera Página</title>
   	 	<meta name="description" content="The HTML5 Herald">
   		<meta name="author" content="Víctor Reyes" >
-  		
+  		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<link rel="stylesheet" href="../../assets/css/bootstrap.css"/>
 		
 	</head>

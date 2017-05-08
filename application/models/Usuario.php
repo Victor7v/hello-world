@@ -5,8 +5,13 @@ class Usuario extends CI_Model {
 	parent::__construct(); //CI_Model();
 	//parent::CI_Model();
 	}
+<<<<<<< HEAD
 //algo que borrar para cuando eso.. 
 	function comprobarLogin($mail,$pass){
+=======
+	
+	function existeEmail($mail){
+>>>>>>> nueva
 	 	
 	   $this->db->where('emailUsuario',$mail);
 	   $query = $this->db->get('usuario');
@@ -20,7 +25,8 @@ class Usuario extends CI_Model {
 	}
 
 	function inserta_usuario($datos = array()){
-		if(!$this->_required(array("emailUsuario","contrasenaUsuario"),$datos)){//
+		echo $datos['emailUsuario'];
+		if($datos['nombreUsuario']=='' || $datos['emailUsuario']=='' || $datos['cpmtrasemaUsuario'] == ''){
 			return FALSE; 
 		}
 		
